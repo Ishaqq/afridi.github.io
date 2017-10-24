@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+      <meta http-equiv="refresh" content="300">
+      <title>Halloween Event</title>
+      <!-- bootstrap library -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+      <!-- jQuery library -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" async src="js/new.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- bootstrap library -->
+      <script type="text/javascript" src="js/jquery.syotimer.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/new_style.css" type="text/css" rel="stylesheet"/>
+      <script type="text/javascript">
+         $(document).ready(function(){
+             /* Simple Timer. The countdown to 20:30 2100.05.09
+             --------------------------------------------------------- */
+              document.getElementById("countdown").style.display = "none";
+              document.getElementById("new-tab-back3").style.display = "none";
+               document.getElementById("new-tab-back4").style.display = "none";
+         
+             $('#simple_timer').syotimer({
+                 year: 2017,
+                 month: 10,
+                 day: 18,
+                 hour: 25,
+                 minute: 00,
+                 timeZone: 1
+         
+             });
+         
+         });
+         function function2(){
+             document.getElementById("countdown_start").style.display = "none";
+              document.getElementById("countdown").style.display = "block";
+              document.getElementById("new-tab-back3").style.display = "block";
+              document.getElementById("new-tab-back4").style.display = "block";
+           $('#simple_timer').syotimer({
+         
+                 year: 2017,
+                 month:10,
+                 day: 22,
+                 hour: 25,
+                 minute: 00,
+                 timeZone: 1
+         
+         
+             });
+         }
+      </script>
+   </head>
+   <body>
+    <audio autoplay>
+      <source src="other-horror-sounds-haunted-graveyard.mp3">
+    </audio>
+
+      <div class="containe-fluid " >
+         <header id="bg-img" class="header">
+            <div class="row " style="margin-bottom: -12px;">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active rank"><a href="#ranking" aria-controls="home" role="tab" data-toggle="tab" id="rank"><b>Ranking</b></a></li>
+                  <li role="presentation" ><a href="#details" aria-controls="profile" role="tab" data-toggle="tab"><b>Info</b></a></li>
+               </ul>
+                 <hr style="border: 2px solid #3da8d2; margin-top: 0px !important;">
+            </div>
+            <div class="row relative" style="position: relative;">
+               <img src="img/lights.gif" class="img img-responsive" style="margin-top: -8px;">
+            </div>
+            <div class=""><img src="img/happy.png" class="img " style="position: absolute;
+   margin-top: -16rem;
+    z-index: 100;
+    width: 60%;
+        margin-left: 21%;">
+            </div>     
+         </header>
+         <div class="container" id="main_container " >
+            <div class="tab-content" >
+               <div id="ranking" class="tab-pane fade in active" id="act-background">
+                  <p class="clear">
+                  <div class="new-tab-back-timer shake-opacity header" id="new-tab-back-timer">
+                     <div class="marg_left"  id="merg-top-5">
+                      
+                        <div class="row demo-4 preview-item shake-opacity ">
+                           <div class="row top-heading " id="countdown_start">
+                              <div class="col-sm-10 col-md-10 col-xs-10 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
+                                 <div class="row row_merg "><img src="img/start_countdown.png" class="img img-responsive"> </div>
+                              </div>
+                           </div>
+                           <div class="row top-heading " id="countdown">
+                              <div class="col-sm-10 col-md-10 col-xs-10 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
+                                 <div class="row row_merg"><img src="img/countdown.png" class="img img-responsive"> </div>
+                              </div>
+                           </div>
+                           <div id="simple_timer" class=""></div>
+                        </div>
+                     </div>
+                  </div>
+                  </p>
+
+                  <div class="new-tab-back3 clear preview-item shake-opacity header" id="new-tab-back3">
+                     <div class="marg_left"  id="merg-top-5">
+                        <div class="row demo">
+                           <div id="demo3" class="demo2">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <img src="img/see-more.png" class="img img-responsive btn-img"  id="show-more-top3" click="show();" style="width: 110px;">
+                     </div>
+                  </div>
+                  <div class="new-tab-back4 clear header" id="new-tab-back4">
+                     <div class="marg_left"  id="merg-top-5">
+                        <div class="row demo">
+                           <div id="demo4" class="demo4 preview-item shake-opacity">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <img src="img/see-more.png" class="img img-responsive btn-img"  id="show-more-top4" click="show();" style="width: 110px;">
+                     </div>
+                  </div>
+               </div>
+               <div id="details" class="tab-pane" id="act-background">
+                  <div class="new-tab-detail  header">
+                     <div class="marg_left"  class ="merg-top-5">
+                        <div class="row demo demo_det">
+                           <div class="col-sm-3" style="float: left;">
+                              <img src="img/icon2.png" class="img  my_img1">
+                           </div>
+                           <div class="col-sm-3 heading_detail">
+                              <h5 style="float: left;">Event Details</h5>
+                           </div>
+                        </div>
+                       
+            <div class="row demo-detail">
+                           <p>We are celebrating the famous festival of “Diwali” for our Indian users.</p>
+                           <p>19th October – 23nd October</p>
+                           <p>In this event, we are going to give out prizes for the most number of coins.</p>
+                           <ol>
+                              <li>The one who receives the most Coins will win. </li>
+                              <li> The one who send the most Gifts will win.</li>
+                           </ol>
+                           <p>Rules and Regulation:</p>
+                           <p >
+                           <ol>
+                              <li>This event is for Happy Diwali any user caught creating disturbances will be banned immediately.</li>
+                              <li> Harassment, Bullying and Abusive language will result in ban of user from Streamkar.</li>
+                              <li> Streamkar will not favor any party.</li>
+                              <li> The result will be fair and cannot be contested.</li>
+                              <li> Streamkar reserves the right to ban any user.</li>
+                              <li> Streamkar reserves the right to modify any of these rules, for any reason, at any time. </li>
+                              <li> Streamkar reserves the right to dissolve the competition for any reason, at any time.  </li>
+                           </ol>
+                           </p>
+                           <p>&nbsp;</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="new-tab-detail2  header">
+                     <div class="marg_left marg_left_img " >
+                        <div class="row " style="">
+                           <img src="img/rewards.png" class="img img-responsive" >
+                        </div>
+                     </div>
+                  </div>
+                  <div class="new-tab-detail2  header">
+                     <div class="marg_left marg_left_img" >
+                        <div class="row " style="">
+                           <img src="img/gifters.png" class="img img-responsive" >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row" style="text-align: center; color: #868686;">
+                  All rights reserved StreamKar 2017
+               </div>
+            </div>
+         </div>
+         <script type="text/javascript" src="js/diwali-event.js"></script>
+      </div>
+   </body>
+</html>
